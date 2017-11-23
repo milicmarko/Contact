@@ -21,7 +21,7 @@ namespace Contact
         public static async Task doTheThing(String email)
         {
             var client = new HttpClient();
-            client.DefaultRequestHeaders.Add("X-FullContact-APIKey", "256d64494c066cee");
+            client.DefaultRequestHeaders.Add("X-FullContact-APIKey", "************");
             String response = await client.GetStringAsync("https://api.fullcontact.com/v2/person.json?email=" + email);
             String[] data = response.Split(":");
         
